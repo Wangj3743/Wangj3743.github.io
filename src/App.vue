@@ -7,7 +7,7 @@
   <div class="m-auto w-[70%]">
   <!--section 00: header-->
     <div> 
-      <img class="rounded-[100%] scale-75" src="src\assets\cube.jpg">
+      <img src="\src\assets\cube.jpg" alt="pfp" class="rounded-[100%] scale-75" >
       <h1 class="text-[80px] font-bold">
         Jim Wang
       </h1>
