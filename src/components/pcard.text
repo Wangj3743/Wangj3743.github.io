@@ -1,0 +1,47 @@
+<!-- project cards -->
+<script>
+    export default {
+        name: "pcard",
+        props: [
+            'title',
+            'para',
+            'button',
+        ]
+    };
+</script>
+
+
+
+<template>
+    <div>
+        <p class="text-white">
+            {{ title }} fds
+        </p>
+    </div>
+
+    <!-- <div class="card w-96 bg-base-100 shadow-xl">
+        <br>
+        <figure><img :src="getImageUrl()" alt="card image" /></figure>
+        <br>
+        <div class="card-body">
+            <h2 class="card-title">{{ title }}</h2>
+            <p class="card-info">{{ para }}</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">{{ button }}</button>
+            </div>
+        </div>
+    </div> -->
+</template>
+
+
+<!-- <script setup>
+    const props = defineProps({
+    iconFilename: String
+    })
+
+    function getImageUrl() {
+    // This path must be correct for your file
+    return new URL(`../assets/${props.iconFilename}`, import.meta.url)
+    }
+
+</script> -->
