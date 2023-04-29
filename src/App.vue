@@ -1,9 +1,12 @@
 <script>
   import pcard from '/src/components/pcard.vue';
+  import hd from '/src/components/horizontalDivider.vue';
 
   export default {
+    name: 'App',
     components: {
       pcard,
+      hd,
     },
     data () {
       return {
@@ -38,70 +41,84 @@
   <button @click="toggleDark()" class="btn h-[70px] w-[70px] fixed right-[10px] top-[10px] dark:bg-white z-50">
     <img v-if="isDark" src="src/assets/moon-solid.svg" alt="moon">
     <img v-else src="src/assets/sun-solid.svg" alt="sun">
-    <!-- <p v-if="isDark">del(currently dark mode)</p>
-    <p v-else>del(currently light mode)</p> -->
   </button>
 
   <div class="m-auto w-[70%]">
-    <div>
-      <!--section 00: header-->
+    <div> <!--section 00: title-->
+      
       <img src="\src\assets\cube.jpg" alt="pfp" class="rounded-[100%] scale-75">
       <h1 class="text-[80px] font-bold">Jim Wang</h1>
     </div>
 
-    <!-- hr --><svg class="w-screen h-[2px]"><rect class="w-[70%] h-[2px] fill-black dark:fill-white " /></svg><br><br><br><br><br>
+    <hd />
 
-    <div>
-      <!--section 01: about-->
-      <h2 class="text-[40px] font-bold">About</h2>
-      <!-- hr --><svg class="w-screen h-[1px]"><rect class="w-[70%] h-[2px] fill-black dark:fill-white" /></svg>
-      <br>
-      <p>Hi, my name is Jim. I'm a high school student who</p>
-      <br><br>
-    </div>
-
-    <div>
-      <!--section 02: projects-->
-      <h2 class="text-[40px] font-bold">Projects</h2>
-      <!-- hr --><svg class="w-screen h-[1px]"><rect class="w-[70%] h-[2px] fill-black dark:fill-white" /></svg>
-      <br>
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-col-4 gap-x-[7px] gap-y-[7px]">
-        <pcard :linkRef="link1" :imgSrc="img1" :imgAlt="alt1" title="Graphic Design Portfolio" desc="test" />
-        <pcard :linkRef="link2" :imgSrc="img2" :imgAlt="alt2" title="Blog" desc="test" />
-        <pcard :linkRef="link3" :imgSrc="img3" :imgAlt="alt3" title="Re-Event" desc="test" />
-        <pcard :linkRef="link4" :imgSrc="img4" :imgAlt="alt4" title="Blockr" desc="test" />
-        <pcard :linkRef="link5" :imgSrc="img5" :imgAlt="alt5" title="Once" desc="test" />
-      </div>
-      <br><br>
-    </div>
-
-    <div>
-      <!--section 3: profiles-->
-      <h2 class="text-[40px] font-bold">Profiles</h2>
-      <!-- hr --><svg class="w-screen h-[1px]"><rect class="w-[70%] h-[2px] fill-black dark:fill-white" /></svg>
-      <br>
-      <div class="flow-root">
-        <!--GitHub-->
-        <a href="https://github.com/Wangj3743/">
-          <img src="src/assets/github.svg" class="w-[32px] h-[32px]">
-          Github
-        </a>
+    <div class="translate-y-[100px]">
+      <div> <!--section 01: about-->
+        <h2 class="text-[40px] font-bold">About</h2>
+        <hd />
         <br>
+        <p>
+          Hi, my name is Jim. 
+          I'm a high school student who has a strong passion for science, mathematics, programming, engineering.
+        </p>
+        <br>
+        <h3 class="text-[30px] font-bold">Interests/Hobbies</h3>
+          <p>
+            
+          </p>
+        <h3 class="text-[30px] font-bold">Languages</h3>
+        <p>
+
+        </p>
+        <br><br>
+      </div>
+
+      <div> <!--section 02: projects-->
+        <h2 class="text-[40px] font-bold">Projects</h2>
+        <hd />
+        <br>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-col-4 gap-x-[7px] gap-y-[7px]">
+          <pcard :linkRef="link1" :imgSrc="img1" :imgAlt="alt1" title="Graphic Design Portfolio" desc="*desc*" />
+          <pcard :linkRef="link2" :imgSrc="img2" :imgAlt="alt2" title="Blog" desc="*desc*" />
+          <pcard :linkRef="link3" :imgSrc="img3" :imgAlt="alt3" title="Re-Event" desc="*desc*" />
+          <pcard :linkRef="link4" :imgSrc="img4" :imgAlt="alt4" title="BLOCKR" desc="*desc*" />
+          <pcard :linkRef="link5" :imgSrc="img5" :imgAlt="alt5" title="Once" desc="*desc*" />
+        </div>
+        <br><br>
+      </div><br><br><br><br><br><br>
+    </div>
+  </div>
+  
+  <!-- section -1: footer -->
+  <br><br><br><br><br><br><br><br>
+    <hd />
+    <div class="bg m-auto w-[70%]"><br><br> 
+      <div class="bg flex flex-row gap-2 justify-center">
+        <a class="" href="mailto:jimwang314@gmail.com">
+          <img v-if="isDark" class="iconSize" src="src/assets/profiles/envelope-dark.svg" >
+          <img v-else class="iconSize" src="src/assets/profiles/envelope.svg">
+        </a>
+        <a href="https://www.linkedin.com/in/jim-wang-263877212/">
+          <img v-if="isDark" class="iconSize" src="src/assets/profiles/linkedin-dark.svg" >
+          <img v-else class="iconSize" src="src/assets/profiles/linkedin.svg">
+        </a>
+        <a href="https://github.com/Wangj3743/">
+          <img v-if="isDark" class="iconSize" src="src/assets/profiles/github-dark.svg" >
+          <img v-else class="iconSize" src="src/assets/profiles/github.svg">
+        </a>
       </div>
       <br><br>
+      <p class="text-center">
+        Jim Wang・2023
+      </p>
+      <br>
     </div>
-  </div><br><br><br><br><br><br>
-
-  <div>
-      <!-- section -1: footer -->
-       <!-- hr --><svg class="w-screen h-[2px]"><rect class="w-[100%] h-[2px] fill-black dark:fill-white" /></svg>
-  </div><br><br><br><br><br>
 </template>
 
 
 
 <style>
-  body {
+  body, .bg {
     @apply transition ease-in-out delay-150 bg-white dark:bg-black duration-300
   }
 
@@ -111,6 +128,11 @@
 
   a {
     color: paleturquoise;
+  }
+
+  .iconSize {
+    height: 32px;
+    width: 32px;
   }
 </style>
 
