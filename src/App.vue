@@ -118,16 +118,16 @@
     <br><br>
     <div class="bg flex flex-row gap-2 justify-center">
       <a class="hover:scale-[1.2] ease-in duration-200" href="mailto:jimwang314@gmail.com">
-        <img v-if="isDark" class="iconSize" src="src/assets/profiles/envelope-dark.svg" />
-        <img v-else class="iconSize" src="src/assets/profiles/envelope.svg" />
+        <img v-if="isDark" class="iconSize" src="/src/assets/profiles/envelope-dark.svg" />
+        <img v-else class="iconSize" src="/src/assets/profiles/envelope.svg" />
       </a>
       <a class="hover:scale-[1.2] ease-in duration-200" href="https://www.linkedin.com/in/jim-wang-263877212/">
-        <img v-if="isDark" class="iconSize" src="src/assets/profiles/linkedin-dark.svg" />
-        <img v-else class="iconSize" src="src/assets/profiles/linkedin.svg" />
+        <img v-if="isDark" class="iconSize" src="/src/assets/profiles/linkedin-dark.svg" />
+        <img v-else class="iconSize" src="/src/assets/profiles/linkedin.svg" />
       </a>
       <a class="hover:scale-[1.2] ease-in duration-200" href="https://github.com/Wangj3743/">
-        <img v-if="isDark" class="iconSize" src="src/assets/profiles/github-dark.svg"/>
-        <img v-else class="iconSize" src="src/assets/profiles/github.svg" />
+        <img v-if="isDark" class="iconSize" src="/src/assets/profiles/github-dark.svg"/>
+        <img v-else class="iconSize" src="/src/assets/profiles/github.svg" />
       </a>
     </div>
     <br><br>
