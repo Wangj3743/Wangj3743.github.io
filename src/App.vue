@@ -36,13 +36,9 @@
 </script>
 
 <template>
-  <button
-    @click="toggleDark()"
-    class="btn h-[70px] w-[70px] fixed right-[10px] top-[10px] dark:bg-white z-50
-    "
-  >
-    <img v-if="isDark" src="src/assets/moon-solid.svg" alt="moon" />
-    <img v-else src="src/assets/sun-solid.svg" alt="sun" />
+  <button @click="toggleDark()" class="btn h-[70px] w-[70px] fixed right-[10px] top-[10px] dark:bg-white z-50">
+    <img v-if="isDark" src="/src/assets/moon-solid.svg" alt="moon" />
+    <img v-else src="/src/assets/sun-solid.svg" alt="sun" />
   </button>
 
   <div class="m-auto w-[70%]">
