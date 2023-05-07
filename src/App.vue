@@ -11,23 +11,23 @@
     data() {
       return {
         // portfolio
-        img1: '/public/assets/project-files/portfolio.png',
+        img1: '/assets/project-files/portfolio.png',
         alt1: 'Graphic Design Portfolio',
         link1: 'https://wangj3743.github.io/portfolio/',
         // blog
-        img2: '/public/assets/project-files/placeholder.png',
+        img2: '/assets/project-files/placeholder.png',
         alt2: 'Blog',
         link2: 'https://wangj3743.github.io/blog',
         // Re-Event
-        img3: '/public/assets/project-files/placeholder.png',
+        img3: '/assets/project-files/placeholder.png',
         alt3: 'Re-Event',
         link3: 'https://re-event.netlify.app',
         // Blockr
-        img4: '/public/assets/project-files/blockr.jpg',
+        img4: '/assets/project-files/blockr.jpg',
         alt4: 'Blockr',
         link4: 'https://devpost.com/software/blockr-uh3e8a',
         // Once
-        img5: '/public/assets/project-files/once.png',
+        img5: '/assets/project-files/once.png',
         alt5: 'Once',
         link5: 'https://devpost.com/software/autimeation',
       };
@@ -37,14 +37,14 @@
 
 <template>
   <button @click="toggleDark()" class="btn h-[70px] w-[70px] fixed right-[10px] top-[10px] dark:bg-white z-50">
-    <img v-if="isDark" src="/public/assets/moon-solid.svg" alt="moon" />
-    <img v-else src="/public/assets/sun-solid.svg" alt="sun" />
+    <img v-if="isDark" src="/assets/moon-solid.svg" alt="moon" />
+    <img v-else src="/assets/sun-solid.svg" alt="sun" />
   </button>
 
   <div class="m-auto w-[70%]">
     <div>
       <!--section 00: title-->
-      <img src="\public\assets\cube.jpg" alt="pfp" class="rounded-[100%] scale-75" />
+      <img src="\assets\cube.jpg" alt="pfp" class="rounded-[100%] scale-75" />
       <h1 class="text-[80px] font-bold">Jim Wang</h1>
     </div>
 
@@ -118,16 +118,16 @@
     <br><br>
     <div class="bg flex flex-row gap-2 justify-center">
       <a class="hover:scale-[1.2] ease-in duration-200" href="mailto:jimwang314@gmail.com">
-        <img v-if="isDark" class="iconSize" src="/public/assets/profiles/envelope-dark.svg" />
-        <img v-else class="iconSize" src="/public/assets/profiles/envelope.svg" />
+        <img v-if="isDark" class="iconSize" src="/assets/profiles/envelope-dark.svg" />
+        <img v-else class="iconSize" src="/assets/profiles/envelope.svg" />
       </a>
       <a class="hover:scale-[1.2] ease-in duration-200" href="https://www.linkedin.com/in/jim-wang-263877212/">
-        <img v-if="isDark" class="iconSize" src="/public/assets/profiles/linkedin-dark.svg" />
-        <img v-else class="iconSize" src="/public/assets/profiles/linkedin.svg" />
+        <img v-if="isDark" class="iconSize" src="/assets/profiles/linkedin-dark.svg" />
+        <img v-else class="iconSize" src="/assets/profiles/linkedin.svg" />
       </a>
       <a class="hover:scale-[1.2] ease-in duration-200" href="https://github.com/Wangj3743/">
-        <img v-if="isDark" class="iconSize" src="/public/assets/profiles/github-dark.svg"/>
-        <img v-else class="iconSize" src="/public/assets/profiles/github.svg" />
+        <img v-if="isDark" class="iconSize" src="/assets/profiles/github-dark.svg"/>
+        <img v-else class="iconSize" src="/assets/profiles/github.svg" />
       </a>
     </div>
     <br><br>
