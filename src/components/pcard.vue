@@ -14,9 +14,7 @@ export default {
 </script>
 
 <template>
-  <a
-    :href="linkRef"
-    class="card bg-black dark:bg-base-100 shadow-xl hover:scale-[1.02] ease-in duration-150">
+  <a :href="linkRef" class="card bg-black dark:bg-white shadow-xl hover:scale-[1.02] ease-in duration-150">
     <figure><img :src="imgSrc" :alt="imgAlt" /></figure>
     <div class="card-body">
       <h2 class="text-white dark:text-black card-title">{{ title }}</h2>
