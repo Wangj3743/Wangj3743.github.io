@@ -17,10 +17,12 @@ var projects = reactive([
   {title: "LED Cube", desc: "TBD", badge1: "Engineering", badge2: "", imgSrc: "/assets/eng/8O0A3746.JPG",  linkRef: ""},
   {title: "Line Follower Robot", desc: "A robot that follows a black line using a PIC12F675 IC.", badge1: "Engineering", badge2: "", imgSrc: "/assets/eng/8O0A3754.JPG",  linkRef: ""},
   {title: "Sumo Bot", desc: "A sumo robot that pushes other bots out of a circular sumo ring, while staying in it using PIC16F628A, L293D, 74HC04 chips.", badge1: "Engineering", badge2: "", imgSrc: "/assets/eng/8O0A3762.JPG",  linkRef: ""},
+  {title: "RythmHacks", desc: "An Innovative High School Hackathon", badge1: "RythmHacks", badge2: "Marketing Organizer", imgSrc: "/assets/projects/RythmHacks.png",  linkRef: "https://rythmhacks.ca/"},
   {title: "Re-Event", desc: "TBD", badge1: "Re-Event", badge2: "", imgSrc: "/assets/projects/re-event.png",  linkRef: "https://re-event.netlify.app"},
   {title: "BLOCKR", desc: "A website blocker with an incentive.", badge1: "JamHacks V (2021)", badge2: "", imgSrc: "/assets/projects/blockr.jpg",  linkRef: "https://devpost.com/software/blockr-uh3e8a"},
   {title: "Once", desc: "Automate repetitive task on the web by just doing it ONCE.", badge1: "ClockHacks (2022)", badge2: "", imgSrc: "/assets/projects/once.png",  linkRef: "https://devpost.com/software/autimeation"},
   {title: "flip.py", desc: "Let's make studying enjoyable", badge1: "HackThe6ix (2023)", badge2: "", imgSrc: "/assets/projects/flippy.png",  linkRef: "https://devpost.com/software/flippy-iaj1v4"},
+  // {title: "", desc: "", badge1: "", badge2: "", imgSrc: "/assets/",  linkRef: ""},
 ]);
 </script>
 
