@@ -2,10 +2,10 @@
 ## Jim Wang's personal website
 
 # Credit
-- [vue.js](vuejs.org/)
+- [vue.js](https://vuejs.org/)
  - [VueUse](https://vueuse.org)
  - [vue-marquee.com](https://vue-marquee.com/guide/)
-- [TailwindCSS](tailwindcss.com/)
- - [DaisyUI](daisyui.com/)
-- [fontawesome](fontawesome.com/)
-- [devicon.dev](devicon.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+ - [DaisyUI](https://daisyui.com/)
+- [fontawesome](https://fontawesome.com/)
+- [devicon.dev](https://devicon.dev/)
