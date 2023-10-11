@@ -106,14 +106,17 @@ var projects = reactive([
         </li>
         <li>
           I also love stationery, photography, 
-          <a href="https://www.worldcubeassociation.org/persons/2019WANJ20">speedsolving Rubik's Cubes</a>, 
-          games (Chess, Tetris, Minesweeper) and playing violin & piano.
+          <a href="https://www.worldcubeassociation.org/persons/2019WANJ20" 
+          class="underline decoration-sky-500/30">
+            speedsolving Rubik's Cubes
+          </a>
+          , games (Chess, Tetris, Minesweeper) and playing violin & piano.
         </li>
         <br>
       </div>
-      <div class="order-1 lg:order-2">
-        <img v-if="isDark" src="/assets/jim4.png" alt="jim_darkmode" class="drop-shadow-sm" />
-        <img v-else src="/assets/jim3.png" alt="jim_lightmode" class="drop-shadow-sm"/>
+      <div class="order-1 lg:order-2 drop-shadow">
+        <img v-if="isDark" src="/assets/jim4.png" alt="jim_darkmode" />
+        <img v-else src="/assets/jim3.png" alt="jim_lightmode" />
       </div>
     </div>
   </div>
@@ -211,12 +214,8 @@ var projects = reactive([
     width: 32px;
   }
 
-  .whiteFill {
-    filter: invert(34%) sepia(94%) saturate(1238%) hue-rotate(174deg) brightness(103%) contrast(96%);
-  }
-
   .bg-img-light {
-    background-image: url('/  assets/main/8O0A2595.JPG');
+    background-image: url('/assets/main/8O0A2595.JPG');
   }
 
   .bg-img-dark {
