@@ -120,7 +120,8 @@ var projects = reactive([
 
 
   <br><br><br>
-  <marqueeVue
+   <!--+turtle, tikinter, taipy, picbasic, daisyuii, -->
+  <!-- <marqueeVue
     @mouseover="marqueePause()"
     @mouseout="marqueeUnpause()"
     :speed="20000"
@@ -130,7 +131,12 @@ var projects = reactive([
   > 
     <img v-if="isDark" v-for="(skill, j) in skillsDark" :key="j" :src="skill" /> 
     <img v-else v-for="(skill, i) in skills" :key="i" :src="skill" /> 
-    <!--+turtle, tikinter, taipy, picbasic, daisyuii, -->
+  </marqueeVue> -->
+  <marqueeVue v-if="isDark" :speed="20000" :width="80" id="marquee-slider-loop"> 
+    <img  v-for="(skill, j) in skillsDark" :key="j" :src="skill" /> 
+  </marqueeVue>
+  <marqueeVue v-else :speed="20000" :width="80" id="marquee-slider-loop"> 
+    <img v-for="(skill, i) in skills" :key="i" :src="skill" /> 
   </marqueeVue>
   <br><br><br>
 
