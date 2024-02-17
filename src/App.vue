@@ -61,11 +61,16 @@ var projects = reactive([
   {title: "RythmHacks", desc: "An Innovative High School Hackathon when one can Experience the Magic of Tech.", badge1: "Hackathon", badge2: "Organizer", imgSrc: "/assets/projects/RythmHacks.png",  linkRef: "https://rythmhacks.ca/"},
   {title: "JAMHacks", desc: "TBD", badge1: "Hackathon", badge2: "Organizer", imgSrc: "/assets/projects/JAMHacks.png",  linkRef: "https://jamhacks.ca/"},
   {title: "ClockHacks", desc: "ClockHacks is a hackathon founded by high school students whose mission is to make hackathons more accessible to students.", badge1: "Hackathon", badge2: "Organizer", imgSrc: "/assets/projects/ClockHacks.jpg",  linkRef: "https://clockhacks.dev/"},
-  {title: "Sumo Bot", desc: "A sumo robot that pushes other bots out of a circular sumo ring, while staying in it using PIC16F628A, L293D, 74HC04 chips.", badge1: "Engineering", badge2: "", imgSrc: "/assets/eng/8O0A3762.JPG",  linkRef: ""},
-  {title: "Line Follower Robot", desc: "A robot that follows a black line using LEDs, phototransistors, and a PIC12F675 IC.", badge1: "Engineering", badge2: "", imgSrc: "/assets/eng/8O0A3754.JPG",  linkRef: ""},
-  {title: "LED Cube", desc: "An LED cube of 64 LEDs that create visually stunning patterns using a PIC16F887 IC.", badge1: "Engineering", badge2: "", imgSrc: "/assets/eng/8O0A3746.JPG",  linkRef: ""},
-  {title: "Cricket PCB", desc: "A circuit board with a sensor activates a buzzer that creates a cricket sound using a 555 timer IC.", badge1: "Engineering", badge2: "", imgSrc: "/assets/eng/8O0A3740.JPG",  linkRef: ""},
-  {title: "Traffic Lights PCB", desc: "A circuit board with two LEDs that alternate on and off using a 555 timer IC.", badge1: "Engineering", badge2: "", imgSrc: "/assets/eng/8O0A3735.JPG",  linkRef: ""},
+  {title: "Sumo Bot", desc: "A sumo robot that pushes other bots out of a circular sumo ring, while staying in it using PIC16F628A, L293D, 74HC04 chips.", badge1: "Comp. Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3762-min.JPG",  linkRef: ""},
+  {title: "Line Follower Robot", desc: "A robot that follows a black line using LEDs, phototransistors, and a PIC12F675 IC.", badge1: "Comp. Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3754-min.JPG",  linkRef: ""},
+  {title: "LED Cube", desc: "An LED cube of 64 LEDs that create visually stunning patterns using a PIC16F887 IC.", badge1: "Comp. Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3746-min.JPG",  linkRef: ""},
+  {title: "Cricket PCB", desc: "A circuit board with a sensor activates a buzzer that creates a cricket sound using a 555 timer IC.", badge1: "Comp. Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3740-min.JPG",  linkRef: ""},
+  {title: "Traffic Lights PCB", desc: "A circuit board with two LEDs that alternate on and off using a 555 timer IC.", badge1: "Comp. Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3735-min.JPG",  linkRef: ""},
+  {title: "lambDAW", desc: "A simplified DAW program that can play sine, square, triangle, and saw waves to produce songs!", badge1: "Processing", badge2: "ICS4UI", imgSrc: "/assets/projects/lambdaw.png",  linkRef: "https://github.com/Wangj3743/lambdaw"},
+  {title: "Waypoint PRO", desc: "Draw tracks and components to create circuit board diagrams with Waypoint!", badge1: "Processing", badge2: "ICS4UI", imgSrc: "/assets/projects/waypoint.png",  linkRef: "https://github.com/Wangj3743/WayPoint"},
+  {title: "Tornado Cellular Automaton", desc: "A visualization of how tornadoes, wind, and heat can change the movement of debris.", badge1: "Processing", badge2: "ICS4UI", imgSrc: "/assets/projects/tornado.png",  linkRef: "https://github.com/soheilchavo/TornadoCellularAutomaton"},
+  {title: "Mandelbrot Set", desc: "Mandelbrot visualization in Processing.", badge1: "Processing", badge2: "ICS4UI", imgSrc: "/assets/projects/mandelbrot.png",  linkRef: "https://github.com/Wangj3743/Mandelbrot-Set"},
+  {title: "Scratch Lines", desc: "A simple and interesting line animation.", badge1: "Processing", badge2: "ICS4UI", imgSrc: "/assets/projects/scratchlines2.png",  linkRef: ""},
   {title: "flip.py", desc: "Let's make studying enjoyable.", badge1: "Hackathon", badge2: "", imgSrc: "/assets/projects/flippy.png",  linkRef: "https://devpost.com/software/flippy-iaj1v4"},
   {title: "Once", desc: "Automate repetitive tasks on the web by just doing it ONCE.", badge1: "Hackathon", badge2: "", imgSrc: "/assets/projects/once.png",  linkRef: "https://devpost.com/software/autimeation"},
   {title: "BLOCKR", desc: "A website blocker with an incentive.", badge1: "Hackathon", badge2: "", imgSrc: "/assets/projects/blockr.jpg",  linkRef: "https://devpost.com/software/blockr-uh3e8a"},
@@ -83,7 +88,7 @@ var projects = reactive([
     <div class="blur-rectangle backdrop-blur-md absolute h-screen w-full"></div>
   </div>
   <div class="text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"> <!--text-->
-    <span class="text-[120px] font-bold text-black dark:text-white">Jim Wang
+    <span class="text-[120px] font-bold text-[#000000] dark:text-white">Jim Wang
       <div class="text-[40px] font-thin">Senior High School Student</div>
     </span>
   </div>
@@ -116,7 +121,7 @@ var projects = reactive([
       </div>
       <div class="order-1 lg:order-2 drop-shadow">
         <img v-if="isDark" src="/assets/jim4.png" alt="jim_darkmode" />
-        <img v-else src="/assets/jim3.png" alt="jim_lightmode" />
+        <img v-else src="/assets/jim5.png" alt="jim_lightmode" />
       </div>
     </div>
   </div>
@@ -180,7 +185,7 @@ var projects = reactive([
     </a>
   </div>
   <br>
-  <p class="text-center">Jim Wang・2023</p>
+  <p class="text-center">Jim Wang・2024</p>
   <br><br>
   <p class="flex flex-row gap-2 justify-center">
     <img v-if="isDark" src="/assets/skills/vuejs-dark.svg" class="w-[25px] h-[25px]" />
@@ -215,11 +220,11 @@ var projects = reactive([
   }
 
   .bg-img-light {
-    background-image: url('/assets/main/8O0A2595.JPG');
+    background-image: url('/assets/main/8O0A2595-min.JPG');
   }
 
   .bg-img-dark {
-    background-image: url('/assets/main/8O0A3667.JPG');
+    background-image: url('/assets/main/8O0A3667-min.JPG');
   }
 
   .bg-img {
