@@ -18,7 +18,7 @@
         <img class="iconSize" src="/assets/profiles/github-dark.svg"/>      </a>
     </div>
     <br>
-    <p class="text-center text-white">Jim Wang・2024</p>
+    <p class="text-center text-white">Jim Wang・2025</p>
     <br>
     <p class="flex flex-row gap-2 justify-center font-medium text-white">
       <a class="hover:scale-[1.1] ease-in duration-200" href="https://vuejs.org/?uwu=true" target="blank">

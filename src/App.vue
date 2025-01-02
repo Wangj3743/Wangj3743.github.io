@@ -33,7 +33,7 @@ var skills = reactive([
   "/assets/skills/arduino.svg",
   "/assets/skills/processing.svg",
   // "/assets/skills/lua.svg",
-  // "/assets/skills/latex.svg",
+  "/assets/skills/latex.svg",
   // "/assets/skills/figma.svg",
 ])
 
@@ -62,9 +62,9 @@ var projects = reactive([
   {title: "JAMHacks", desc: "Join 200+ high school students from diverse backgrounds and skills to work on innovative projects.", badge1: "Hackathon", badge2: "Organizer", imgSrc: "/assets/projects/JAMHacks2.png",  linkRef: "https://jamhacks.ca/"},
   {title: "RythmHacks", desc: "An Innovative High School Hackathon when one can Experience the Magic of Tech.", badge1: "Hackathon", badge2: "Organizer", imgSrc: "/assets/projects/RythmHacks.png",  linkRef: "https://rythmhacks.ca/"},
   {title: "ClockHacks", desc: "ClockHacks is a hackathon founded by high school students whose mission is to make hackathons more accessible to students.", badge1: "Hackathon", badge2: "Organizer", imgSrc: "/assets/projects/ClockHacks.jpg",  linkRef: "https://clockhacks.dev/"},
-  {title: "Firefighter Robot", desc: "A robot that can navigate mazes to locate and put out flames. Uses PIC16F18875 & L293D chips.", badge1: "Computer Engineering", badge2: "", imgSrc: "assets/projects/Screenshot 2024-07-01 221829.png",  linkRef: ""},
-  {title: "Sumo Bot", desc: "A sumo robot that pushes other bots out of a circular sumo ring, while staying in it. Uses PIC16F628A, L293D, and 74HC04 chips.", badge1: "Computer Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3762-min.JPG",  linkRef: ""},
-  {title: "Line Follower Robot", desc: "A robot that follows a black line using LEDs, phototransistors, and a PIC12F675 IC.", badge1: "Computer Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3754-min.JPG",  linkRef: ""},
+  {title: "Firefighter Robot", desc: "A robot that can navigate mazes to locate and put out flames. Uses PIC16F18875 & L293D chips.", badge1: "Computer Engineering", badge2: "", imgSrc: "assets/projects/Screenshot 2024-07-01 221829.png",  linkRef: "https://github.com/Wangj3743/TEJ4MI"},
+  {title: "Sumo Bot", desc: "A sumo robot that pushes other bots out of a circular sumo ring, while staying in it. Uses PIC16F628A, L293D, and 74HC04 chips.", badge1: "Computer Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3762-min.JPG",  linkRef: "https://github.com/Wangj3743/TEJ3MI"},
+  {title: "Line Follower Robot", desc: "A robot that follows a black line using LEDs, phototransistors, and a PIC12F675 IC.", badge1: "Computer Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3754-min.JPG",  linkRef: "https://github.com/Wangj3743/TEJ3MI"},
   {title: "LED Cube", desc: "An LED cube of 64 LEDs that create visually stunning patterns using a PIC16F887 IC.", badge1: "Computer Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3746-min.JPG",  linkRef: ""},
   {title: "Cricket PCB", desc: "A circuit board with a sensor activates a buzzer that creates a cricket sound using a 555 timer IC.", badge1: "Computer Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3740-min.JPG",  linkRef: ""},
   {title: "Traffic Lights PCB", desc: "A circuit board with two LEDs that alternate on and off using a 555 timer IC.", badge1: "Computer Engineering", badge2: "", imgSrc: "/assets/projects/8O0A3735-min.JPG",  linkRef: ""},
@@ -154,24 +154,6 @@ var projects = reactive([
 
 
 <br><br>
-
-
-  <!-- blog -->
-  <!-- <div>
-
-  </div>
-
-
-  <br><br><horizontalDivider /><br><br> -->
-
-
-  <!-- gallary -->
-  <!-- <div>
-    
-  </div>
-
-
-  <br><br><horizontalDivider /><br><br> -->
 
 
   <foot />
