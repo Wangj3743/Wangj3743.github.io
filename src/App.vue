@@ -32,6 +32,7 @@ var skills = reactive([
   "/assets/skills/tailwind.svg",
   "/assets/skills/arduino.svg",
   "/assets/skills/processing.svg",
+  "/assets/skills/git.svg",
   // "/assets/skills/lua.svg",
   "/assets/skills/latex.svg",
   // "/assets/skills/figma.svg",
@@ -50,8 +51,9 @@ var skillsDark = reactive([
   "/assets/skills/tailwind-dark.svg",
   "/assets/skills/arduino-dark.svg",
   "/assets/skills/processing-dark.svg",
+  "/assets/skills/git-dark.svg",
   // "/assets/skills/lua-dark.svg",
-  // "/assets/skills/latex-dark.svg",
+  "/assets/skills/latex-dark.svg",
   // "/assets/skills/figma-dark.svg",
 ])
 
@@ -87,7 +89,7 @@ var projects = reactive([
   <darkModeToggle />
 
   <!-- title --> 
-  <div class="bg-img bg-cover bg-center h-screen w-full flex items-center justify-center"> <!--bg image+blur-->
+  <div :style="{ backgroundImage: `url(${randomImage})` }" class="bg-img">
     <div class="blur-rectangle backdrop-blur-md absolute h-screen w-full bg-black/25"></div>
   </div>
   <div class="w-[100%] md:w-[75%] text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"> <!--text-->
@@ -166,7 +168,7 @@ var projects = reactive([
     height: 100%;
   } */
   template, body, .bg {
-    @apply bg-white dark:bg-[#1e2124];
+    @apply bg-white dark:bg-[#1f1e33];
   }
 
   h1, h2, h3, p, li, details, summary {
@@ -183,14 +185,36 @@ var projects = reactive([
   }
 
   .bg-img {
-    background-image: url('/assets/main/kb2.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust as needed */
   }
 </style>
 
 
 
 <script setup>
+  import { ref } from 'vue';
   import { useDark, useToggle } from '@vueuse/core';
   const isDark = useDark();
   const toggleDark = useToggle(isDark);
+
+  const images = [
+    // '/assets/main/desktop.JPG',
+    '/assets/main/kb0.JPG',
+    '/assets/main/kb1.JPG',
+    '/assets/main/kb2.JPG',
+    '/assets/main/kb3.JPG',
+    // '/assets/main/ship.JPG',
+    '/assets/main/subway.JPG',
+    '/assets/main/sumo1.JPG',
+    '/assets/main/sun.JPG',
+    'assets/main/leaves.JPG',
+    // 'assets/main/convo.JPG',
+    // 'assets/main/robarts.JPG',
+    'assets/main/uc.JPG',
+    'assets/main/walkway.JPG',
+    'assets/main/board.JPG',
+  ];
+  const randomImage = ref(images[Math.floor(Math.random() * images.length)]);
 </script>

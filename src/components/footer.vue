@@ -6,7 +6,7 @@
 
 
 <template>
-  <div class="bg-black py-[70px]">
+  <div class="bg-black py-[70px] overflow-hidden">
     <div class="flex flex-row gap-3 justify-center">
       <a class="hover:scale-[1.2] ease-in duration-200" href="mailto:jimwang314@gmail.com">
         <img class="iconSize" src="/assets/profiles/envelope-dark.svg" />
@@ -29,5 +29,19 @@
         <img src="/assets/skills/tailwind-dark.svg" class="w-[25px] h-[25px]" />
       </a>
     </p>
+    <div class="relative">
+      <div class="absolute bottom-[-50px] right-[-15px]">
+        <pre class="text-[#1f1e33] text-[13px] lg:visible">
+                dP oo            dP   dP   dP                            
+                88               88   88   88                             
+                88 dP 88d8b.d8b. 88  .8P  .8P .d8888b. 88d888b. .d8888b. 
+                88 88 88'`88'`88 88  d8'  d8' 88'  `88 88'  `88 88'  `88 
+          88.  .d8P 88 88  88  88 88.d8P8.d8P  88.  .88 88    88 88.  .88
+          `Y8888'  dP dP  dP  dP 8888' Y88'   `88888P8 dP    dP `8888P88 
+                                                                      .88
+                                                                  d8888P 
+        </pre>
+      </div>
+    </div>
   </div>
 </template>
