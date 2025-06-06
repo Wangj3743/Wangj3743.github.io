@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  background-color: #0D0D0D;
+  /* text-align: center; */
+}
+
+h1, h2, h3, p, a {
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+  font-family: Helvetica, Sans-Serif;
+  color: azure;
+}
+
+a {
+  text-decoration: none
+}
+
+.title {
+    background-color: rgb(58,85,180);
+    background-image: linear-gradient(45deg, rgb(58,85,180), rgba(69,252,146,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.titleLeft {
+  float: left; 
+  height: 100vh; 
+  width: 50%;
+  object-fit: cover;
+}
+
+.titleRight {
+  float: right; 
+  height: 100vh; 
+  width: 50%;
+  object-fit: cover;
+  text-align: center;
+}
+
+.titleCenter {
+  transform: translate(0px, 50vh)
+}
+
+.center {
+  text-align: center;
+}
+
+.content {
+/* 	transform: translate(0px, vh); */
+/* 	top: 50px; */
+	position: absolute;
+	left: 0;
+	top: 0; 
+	transform: translate(0px, 110vh);
+}
+
+/* .center {
+  transform: translate(0px, 105vw);
+  display: flex;
+  align-items: center;
+  text-align: center;
+} */
