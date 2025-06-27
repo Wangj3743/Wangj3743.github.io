@@ -1,7 +1,5 @@
 <template>
   <div>
-    <header />
-    <slide />
-    <NuxtLink to="/about">about</NuxtLink>
+    <slideshow :index=0 />
   </div>
-</template
+</template>

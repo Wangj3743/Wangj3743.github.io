@@ -1,19 +1,26 @@
-<script>
+<script setup>
+  const props = defineProps({
+  title: String,
+  imgsrc: String,
+  link: String,
+});
 </script>
 
 
 <template>
-  <di
-    <img class="w-full" src="/public/projects/1 - rg controllers/thumb.jpg">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-      <h1 class="text-8xl text-gray-950 tracking-tighter text-balance text-white text-center">Tactile Interfaces</h1>
-      <h2 class="italic text-white">mini replicas of rhythm game controllers with full hardware and software integration</h2>
-    </div>
+  <div :style="{backgroundImage: `url(${imgsrc})`}" class="bg-cover bg-center h-screen z-0">
+    <div class="absolute h-screen w-full bg-radial from-* from-40% to-black z-0"></div>
+  </div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+    <NuxtLink :to="link" class="text-[50px] font-sans text-gray-950 tracking-tighter text-balance text-white text-center">{{ props.title }}</NuxtLink>
   </div>
 </template>
 
 
-
 <style>
-
+.bg-img {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 </style>

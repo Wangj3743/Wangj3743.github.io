@@ -1,7 +1,21 @@
-<script>
-export default {
-  
-}
+<script setup>
+useHead({
+  title: 'Jim Wang 1',
+  meta: [
+    { name: 'description', content: 'Jim Wangs portfolio 2' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'theme-color', content: '#1f1e33' },
+
+    { property: 'og:title', content: 'Jim Wangs portfolio 3' },
+    { property: 'og:description', content: 'Jim Wangs portfolio 4' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: '' },
+    { property: 'og:image', content: '/public/' },
+  ],
+  link: [
+    { rel: 'icon', href: '/public/favicon.png' },
+  ],
+})
 </script>
 
 
