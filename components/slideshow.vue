@@ -17,9 +17,9 @@ let notFirst = computed(() => props.index > 0);
 let notLast = computed(() => props.index < slides.length - 1);
 
 const slides = [
-  {title: 'Tactile Interfaces', imgsrc: '/projects/1-rgcons/cover.jpg', link: '/rgcons'},
-  {title: 'Machines in Motion', imgsrc: '/projects/2-embedded/cover.jpg', link: '/embedded'},
-  {title: 'Synthesization and Simulation', imgsrc: '/projects/1-rgcons/cover.jpg', link: '/rgcons'},
+  {title: 'Tactile Interfaces', imgsrc: '/projects/1-rgcons/cover.jpg', link: '/tactile-interfaces'},
+  {title: 'Machines in Motion', imgsrc: '/projects/2-embedded/cover.jpg', link: '/machines-in-motion'},
+  {title: 'Synthesization and Simulation', imgsrc: '/projects/1-rgcons/cover.jpg', link: '/synthesization-and-simulation'},
 ];
 
 

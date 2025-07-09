@@ -10,10 +10,10 @@ useHead({
     { property: 'og:description', content: 'Jim Wangs portfolio 4' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: '' },
-    { property: 'og:image', content: '/public/' },
+    { property: 'og:image', content: '/public/meta/img.jpg' },
   ],
   link: [
-    { rel: 'icon', href: '/public/favicon.png' },
+    { rel: 'icon', href: '/public/meta/fav2.png' },
   ],
 })
 </script>
