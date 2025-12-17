@@ -5,6 +5,7 @@ const config = {
     extend: {
       fontFamily: {
         TeXGyreAdventor: ['TeXGyreAdventor', 'sans-serif'],
+        sarasa: ['sarasa', 'sans-serif'],
       },
     },
   },

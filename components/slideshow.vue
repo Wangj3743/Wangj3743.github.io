@@ -1,6 +1,6 @@
 <template>
   <div class="relative h-screen w-full overflow-hidden">
-  <slide v-if="slides[i]" v-bind="slides[i]" :key="i" />
+    <slide v-if="slides[i]" v-bind="slides[i]" :key="i" />
 
     <button v-if="notFirst" @click="prev" type="button" class="absolute left-7 top-1/2 -translate-y-1/2 z-10 cursor-pointer size-[50px] flex items-center justify-center">
       <img src="/icons/prev.svg" class="size-[25px]">
